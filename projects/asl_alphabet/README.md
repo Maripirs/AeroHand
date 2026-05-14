@@ -244,31 +244,32 @@ Use a custom sequence when the direct transition is not safe or does not look co
 ```
 ## ASL Handshape Reference Table
 
- Target Image | Letter | Status | Robot Pose | Robot Front View | Robot Side View |
+
+| Target | Letter | Status | Robot Pose | Robot Front | Robot Side |
 |---|---|---|---:|---|---|
-| ![A target](images/targets/a_target.png) | A | supported | `[10, 55, 23, 80, 80, 80, 90]` | ![A front](images/robot/a_front.png) | ![A side](images/robot/a_side.png) |
-| ![B target](images/targets/b_target.png) | B | supported | `[20, 100, 70, 0, 0, 0, 0]` | ![B front](images/robot/b_front.png) | ![B side](images/robot/b_side.png) |
-| ![C target](images/targets/c_target.png) | C | supported | `[100, 20, 30, 45, 45, 45, 45]` | ![C front](images/robot/c_front.png) | ![C side](images/robot/c_side.png) |
-| ![D target](images/targets/d_target.png) | D | supported | `[100, 25, 30, 0, 55, 55, 55]` | ![D front](images/robot/d_front.png) | ![D side](images/robot/d_side.png) |
-| ![E target](images/targets/e_target.png) | E | questionable | `[100, 25, 30, 55, 55, 55, 55]` | ![E front](images/robot/e_front.png) | ![E side](images/robot/e_side.png) |
-| ![F target](images/targets/f_target.png) | F | supported | `[80, 25, 35, 45, 0, 0, 0]` | ![F front](images/robot/f_front.png) | ![F side](images/robot/f_side.png) |
-| ![G target](images/targets/g_target.png) | G | needs_baxter | `[40, 80, 30, 0, 90, 90, 90]` | ![G front](images/robot/g_front.png) | ![G side](images/robot/g_side.png) |
-| ![H target](images/targets/h_target.png) | H | needs_baxter | `[80, 100, 40, 0, 0, 90, 90]` | ![H front](images/robot/h_front.png) | ![H side](images/robot/h_side.png) |
-| ![I target](images/targets/i_target.png) | I | supported | `[80, 40, 40, 90, 90, 90, 0]` | ![I front](images/robot/i_front.png) | ![I side](images/robot/i_side.png) |
-| ![J target](images/targets/j_target.png) | J | needs_baxter | `[80, 40, 40, 90, 90, 90, 0]` | ![J front](images/robot/j_front.png) | ![J side](images/robot/j_side.png) |
-| ![K target](images/targets/k_target.png) | K | questionable | `[50, 80, 40, 0, 20, 90, 90]` | ![K front](images/robot/k_front.png) | ![K side](images/robot/k_side.png) |
-| ![L target](images/targets/l_target.png) | L | supported | `[0, 0, 0, 0, 90, 90, 90]` | ![L front](images/robot/l_front.png) | ![L side](images/robot/l_side.png) |
-| ![M target](images/targets/m_target.png) | M | questionable | `[100, 100, 40, 60, 60, 60, 60]` | ![M front](images/robot/m_front.png) | ![M side](images/robot/m_side.png) |
-| ![N target](images/targets/n_target.png) | N | questionable | `[70, 100, 40, 60, 60, 60, 60]` | ![N front](images/robot/n_front.png) | ![N side](images/robot/n_side.png) |
-| ![O target](images/targets/o_target.png) | O | supported | `[100, 30, 30, 50, 50, 50, 50]` | ![O front](images/robot/o_front.png) | ![O side](images/robot/o_side.png) |
-| ![P target](images/targets/p_target.png) | P | needs_baxter | `[50, 80, 40, 0, 20, 90, 90]` | ![P front](images/robot/p_front.png) | ![P side](images/robot/p_side.png) |
-| ![Q target](images/targets/q_target.png) | Q | needs_baxter | `[40, 90, 15, 20, 90, 90, 90]` | ![Q front](images/robot/q_front.png) | ![Q side](images/robot/q_side.png) |
-| ![R target](images/targets/r_target.png) | R | not_possible | `[70, 100, 50, 0, 0, 90, 90]` | ![R front](images/robot/r_front.png) | ![R side](images/robot/r_side.png) |
-| ![S target](images/targets/s_target.png) | S | supported | `[90, 100, 30, 80, 80, 80, 90]` | ![S front](images/robot/s_front.png) | ![S side](images/robot/s_side.png) |
-| ![T target](images/targets/t_target.png) | T | not_possible | `[70, 85, 40, 50, 100, 100, 100]` | ![T front](images/robot/t_front.png) | ![T side](images/robot/t_side.png) |
-| ![U target](images/targets/u_target.png) | U | supported | `[100, 100, 30, 0, 0, 90, 90]` | ![U front](images/robot/u_front.png) | ![U side](images/robot/u_side.png) |
-| ![V target](images/targets/v_target.png) | V | not_possible | `[100, 100, 30, 0, 0, 90, 90]` | ![V front](images/robot/v_front.png) | ![V side](images/robot/v_side.png) |
-| ![W target](images/targets/w_target.png) | W | questionable | `[100, 100, 30, 0, 90, 90, 90]` | ![W front](images/robot/w_front.png) | ![W side](images/robot/w_side.png) |
-| ![X target](images/targets/x_target.png) | X | questionable | `[100, 100, 30, 30, 90, 90, 90]` | ![X front](images/robot/x_front.png) | ![X side](images/robot/x_side.png) |
-| ![Y target](images/targets/y_target.png) | Y | questionable | `[0, 90, 0, 90, 90, 90, 0]` | ![Y front](images/robot/y_front.png) | ![Y side](images/robot/y_side.png) |
-| ![Z target](images/targets/z_target.png) | Z | needs_baxter | `[100, 100, 30, 0, 90, 90, 90]` | ![Z front](images/robot/z_front.png) | ![Z side](images/robot/z_side.png) |
+| <img src="images/targets/a_target.png" height="100"> | A | supported | `[10, 55, 23, 80, 80, 80, 90]` | <img src="images/robot/a_front.png" height="100"> | <img src="images/robot/a_side.png" height="100"> |
+| <img src="images/targets/b_target.png" height="100"> | B | supported | `[20, 100, 70, 0, 0, 0, 0]` | <img src="images/robot/b_front.png" height="100"> | <img src="images/robot/b_side.png" height="100"> |
+| <img src="images/targets/c_target.png" height="100"> | C | supported | `[100, 20, 30, 45, 45, 45, 45]` | <img src="images/robot/c_front.png" height="100"> | <img src="images/robot/c_side.png" height="100"> |
+| <img src="images/targets/d_target.png" height="100"> | D | supported | `[100, 25, 30, 0, 55, 55, 55]` | <img src="images/robot/d_front.png" height="100"> | <img src="images/robot/d_side.png" height="100"> |
+| <img src="images/targets/e_target.png" height="100"> | E | questionable | `[100, 25, 30, 55, 55, 55, 55]` | <img src="images/robot/e_front.png" height="100"> | <img src="images/robot/e_side.png" height="100"> |
+| <img src="images/targets/f_target.png" height="100"> | F | supported | `[80, 25, 35, 45, 0, 0, 0]` | <img src="images/robot/f_front.png" height="100"> | <img src="images/robot/f_side.png" height="100"> |
+| <img src="images/targets/g_target.png" height="100"> | G | needs_baxter | `[40, 80, 30, 0, 90, 90, 90]` | <img src="images/robot/g_front.png" height="100"> | <img src="images/robot/g_side.png" height="100"> |
+| <img src="images/targets/h_target.png" height="100"> | H | needs_baxter | `[80, 100, 40, 0, 0, 90, 90]` | <img src="images/robot/h_front.png" height="100"> | <img src="images/robot/h_side.png" height="100"> |
+| <img src="images/targets/i_target.png" height="100"> | I | supported | `[80, 40, 40, 90, 90, 90, 0]` | <img src="images/robot/i_front.png" height="100"> | <img src="images/robot/i_side.png" height="100"> |
+| <img src="images/targets/j_target.png" height="100"> | J | needs_baxter | `[80, 40, 40, 90, 90, 90, 0]` | <img src="images/robot/j_front.png" height="100"> | <img src="images/robot/j_side.png" height="100"> |
+| <img src="images/targets/k_target.png" height="100"> | K | questionable | `[50, 80, 40, 0, 20, 90, 90]` | <img src="images/robot/k_front.png" height="100"> | <img src="images/robot/k_side.png" height="100"> |
+| <img src="images/targets/l_target.png" height="100"> | L | supported | `[0, 0, 0, 0, 90, 90, 90]` | <img src="images/robot/l_front.png" height="100"> | <img src="images/robot/l_side.png" height="100"> |
+| <img src="images/targets/m_target.png" height="100"> | M | questionable | `[100, 100, 40, 60, 60, 60, 60]` | <img src="images/robot/m_front.png" height="100"> | <img src="images/robot/m_side.png" height="100"> |
+| <img src="images/targets/n_target.png" height="100"> | N | questionable | `[70, 100, 40, 60, 60, 60, 60]` | <img src="images/robot/n_front.png" height="100"> | <img src="images/robot/n_side.png" height="100"> |
+| <img src="images/targets/o_target.png" height="100"> | O | supported | `[100, 30, 30, 50, 50, 50, 50]` | <img src="images/robot/o_front.png" height="100"> | <img src="images/robot/o_side.png" height="100"> |
+| <img src="images/targets/p_target.png" height="100"> | P | needs_baxter | `[50, 80, 40, 0, 20, 90, 90]` | <img src="images/robot/p_front.png" height="100"> | <img src="images/robot/p_side.png" height="100"> |
+| <img src="images/targets/q_target.png" height="100"> | Q | needs_baxter | `[40, 90, 15, 20, 90, 90, 90]` | <img src="images/robot/q_front.png" height="100"> | <img src="images/robot/q_side.png" height="100"> |
+| <img src="images/targets/r_target.png" height="100"> | R | not_possible | `[70, 100, 50, 0, 0, 90, 90]` | <img src="images/robot/r_front.png" height="100"> | <img src="images/robot/r_side.png" height="100"> |
+| <img src="images/targets/s_target.png" height="100"> | S | supported | `[90, 100, 30, 80, 80, 80, 90]` | <img src="images/robot/s_front.png" height="100"> | <img src="images/robot/s_side.png" height="100"> |
+| <img src="images/targets/t_target.png" height="100"> | T | not_possible | `[70, 85, 40, 50, 100, 100, 100]` | <img src="images/robot/t_front.png" height="100"> | <img src="images/robot/t_side.png" height="100"> |
+| <img src="images/targets/u_target.png" height="100"> | U | supported | `[100, 100, 30, 0, 0, 90, 90]` | <img src="images/robot/u_front.png" height="100"> | <img src="images/robot/u_side.png" height="100"> |
+| <img src="images/targets/v_target.png" height="100"> | V | not_possible | `[100, 100, 30, 0, 0, 90, 90]` | <img src="images/robot/v_front.png" height="100"> | <img src="images/robot/v_side.png" height="100"> |
+| <img src="images/targets/w_target.png" height="100"> | W | questionable | `[100, 100, 30, 0, 90, 90, 90]` | <img src="images/robot/w_front.png" height="100"> | <img src="images/robot/w_side.png" height="100"> |
+| <img src="images/targets/x_target.png" height="100"> | X | questionable | `[100, 100, 30, 30, 90, 90, 90]` | <img src="images/robot/x_front.png" height="100"> | <img src="images/robot/x_side.png" height="100"> |
+| <img src="images/targets/y_target.png" height="100"> | Y | questionable | `[0, 90, 0, 90, 90, 90, 0]` | <img src="images/robot/y_front.png" height="100"> | <img src="images/robot/y_side.png" height="100"> |
+| <img src="images/targets/z_target.png" height="100"> | Z | needs_baxter | `[100, 100, 30, 0, 90, 90, 90]` | <img src="images/robot/z_front.png" height="100"> | <img src="images/robot/z_side.png" height="100"> |
