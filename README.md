@@ -169,4 +169,21 @@ For each transition, it:
 
 ## Project Status
 
-The project currently supports safe transition generation for AeroHand poses using calibration data, thumb clearance rules, and thumb/finger relationship handling. 
+The core safe motion system is currently focused on hardware-safe transitions for the AeroHand. The project includes pose validation, trajectory sanitization, thumb clearance handling, and transition logic for moving between hand poses more safely.
+
+Human-in-the-loop calibration scripts are included for collecting thumb clearance and thumb relationship data. These scripts prompt the user to run specific coordinate tests on the hand, then save the user-confirmed results to CSV files.
+
+The ASL alphabet demo is currently included as a sub-project. It uses ASL-inspired handshapes as a practical test case for the safe motion system.
+
+[View the ASL Alphabet README](projects/asl_alphabet/README.md)
+
+
+## Future Ideas
+
+A possible future extension is a layered motion system. The current project defines each pose as a full list of joint values, which works for testing and documenting individual handshapes. However, as the number of gestures grows, it may become difficult to maintain every pose by editing full coordinate lists by hand.
+
+It would be interesting to explore building poses from reusable motion components. For example, a pose could be made from a base finger configuration, a thumb placement, and an optional wrist or arm orientation. This would make it easier to reuse safe motion patterns across multiple gestures instead of redefining similar handshapes from scratch.
+
+A useful starting point would be separating thumb behavior from finger behavior. Thumb positions such as over, under, neutral, or out of the way could be defined once, then combined with reusable finger curl patterns.
+
+
